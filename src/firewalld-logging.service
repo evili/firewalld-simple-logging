@@ -1,0 +1,13 @@
+[Unit]
+Description=Log dropped and rejected packets of firewalld
+After=firewald.service
+
+[Service]
+Type=oneshot
+EnvironmentFile=-/usr/local/etc/sysconfig/firewalld
+ExecStart=/usr/local/libexec/firewalld-logging-start
+ExecStop=/usr/local/libexec/firewalld-logging-stop
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target

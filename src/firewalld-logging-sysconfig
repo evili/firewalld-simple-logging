@@ -1,0 +1,21 @@
+#
+# firewalld-logging
+#
+# Uncomment and edit the following default values:
+#
+# Where to insert the logging rule.
+# Normally just before the last 2 rules.
+#
+#RULES_AFTER=2
+#
+#  logging prefix
+#
+#LOG_PREFIX="FIREWALLED: "
+#
+# logging limit
+#
+#LOG_LIMIT=1/min
+#
+# logging burst
+#
+#LOG_BURST=10
