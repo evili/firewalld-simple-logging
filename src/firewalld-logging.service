@@ -1,6 +1,7 @@
 [Unit]
 Description=Log dropped and rejected packets of firewalld
 After=firewald.service
+BindsTo=firewald.service
 
 [Service]
 Type=oneshot
